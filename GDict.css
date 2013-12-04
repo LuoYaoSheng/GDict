@@ -1,18 +1,11 @@
-.tb, #gbar, #guser, .gbh {display:none;}
+#custheme, .c-topbar, .c-header, #c_footer, #topImgAd, #result_navigator, #ads, #rel-search, .c-bsearch, #c_footer {display:none;}
 
-#cnt {
-	width: 380px !important;
-	min-width: 380px !important;
+#results-contents {
+    width: 380px !important;
+    min-width: 380px !important;
+    margin: 0px 5px !important;
 }
 
-.dct-srch-otr {
-	width: 100% !important;
-}
-
-.rt-sct-exst {
-	width: 100% !important;
-}
-
-.dct-rt-sct, .dscl-dct, .dscl-glb {
-    display: none;
+#container {
+    width: 380px !important;
 }

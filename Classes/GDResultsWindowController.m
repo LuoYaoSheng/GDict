@@ -95,14 +95,13 @@
 	[self showResultsWindow:self];
     [resultsWebView setHidden:YES];
     
-	NSString *language = [[NSUserDefaults standardUserDefaults]
-							objectForKey:@"Language"];
-	NSString *locale   = [self.languages objectForKey:language];
+//	NSString *language = [[NSUserDefaults standardUserDefaults]
+//							objectForKey:@"Language"];
+//	NSString *locale   = [self.languages objectForKey:language];
 	
-	NSString *url = [[NSString alloc]initWithFormat: 
-		 @"http://www.google.com/dictionary?langpair=en|%@&q=%@&hl=en&aq=f",
-		 locale,
-		 [queryString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSString *url = [[NSString alloc]initWithFormat:
+                     @"http://dict.youdao.com/search?q=%@&ue=utf8",
+                     [queryString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 
 	if (![resultsWebView isLoading]) {
 		[resultsWebView setMainFrameURL:url];
